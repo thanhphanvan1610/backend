@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnoTS OTP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .welcome-message {
+            font-size: 24px;
+            color: #4285F4;
+            margin-bottom: 20px;
+        }
+
+        .custom-message {
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #4285F4;
+            color: #ffffff;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .button:hover {
+            background-color: #3367d6;
+        }
+
+        .separator {
+            display: block;
+            margin: 10px 0;
+            height: 1px;
+            background-color: #ccc;
+        }
+
+        .signature {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-message">OTP FROM ANOTS</div>
+        <div class="custom-message">
+            <p>Dear <strong>{{username}}</strong>,</p>
+            <p>Your OTP: <strong>{{OTP}}</strong></p>
+            <p><strong>IMPORTANT:</strong> Please keep your OTP confidential. Do not share it with anyone.</p>
+            <p>OTP valid in 20 minutes!</p>
+            <p>from AnoTS to {{email}}</p>
+        </div>
+        <span class="separator"></span>
+        <p class="signature">Best regards,<br>The AnoTS team</p>
+    </div>
+</body>
+</html>

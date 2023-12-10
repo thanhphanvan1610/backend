@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to AnoTS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .welcome-message {
+            font-size: 24px;
+            color: #4285F4;
+            margin-bottom: 20px;
+        }
+
+        .user-info {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .custom-message {
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #4285F4;
+            color: #ffffff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #3367d6;
+        }
+
+        .separator {
+            display: block;
+            margin: 10px 0;
+            height: 1px;
+            background-color: #ccc;
+        }
+
+        .signature {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-message">Welcome to AnoTS!</div>
+        <p>Dear {{username}},</p>
+        <div class="custom-message">
+            <p>Welcome to the AnoTS community. We are very pleased with your participation. Start realizing your dream today.</p>
+            <a href="https://nodejs.org"><button class="button"> Get Started</button></a>
+            <p>from AnoTS to {{email}}</p>
+        </div>
+        <span class="separator"></span>
+        <p class="signature">Best regards,<br>The AnoTS team</p>
+    </div>
+</body>
+</html>
